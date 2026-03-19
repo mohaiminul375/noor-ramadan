@@ -1,36 +1,502 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Noor-Ramadan</title>
-        <link rel="stylesheet" href="style.css">
-        <!-- tailwind css -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <!-- font awesome cdn -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <header>
-            <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Ramadan</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-            </nav>
-        </header>
-        <main>
+  <body class="bg-[]">
+    <header>
+      <!-- Navbar -->
+      <div
+        class="sticky top-0 bg-base-100 z-50 border-b border-[#b0ec38] shadow-sm"
+      >
+        <div class="navbar container mx-auto px-4 lg:px-8">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
+              >
+                <li class="hover:text-[#2E7D32] font-semibold text-base">
+                  <a href="/">Home</a>
+                </li>
+                <li class="hover:text-[#2E7D32] font-semibold text-base">
+                  <a href="/products.html">Tracker</a>
+                </li>
+                <li class="hover:text-[#2E7D32] font-semibold text-base">
+                  <a href="#">Iftar</a>
+                </li>
+                <li class="hover:text-[#2E7D32] font-semibold text-base">
+                  <a href="#">History & Rewards</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Logo -->
+            <h2 class="font-bold text-2xl text-[#2E7D32]">
+              <a class="logo italic" href="/">Noor Ramadan</a>
+            </h2>
+          </div>
+          <!-- Center -->
+          <div class="navbar-center hidden lg:flex">
+            <!-- empty -->
+          </div>
+          <!-- Right side lg -->
+          <div class="navbar-end">
+            <ul class="menu menu-horizontal px-1 gap-4">
+              <li class="hover:text-[#2E7D32] font-semibold text-base">
+                <a href="/">Home</a>
+              </li>
+              <li class="hover:text-[#2E7D32] font-semibold text-base">
+                <a href="#history">History</a>
+              </li>
+              <li class="hover:text-[#2E7D32] font-semibold text-base">
+                <a href="#tracker">Tracker</a>
+              </li>
+              <li class="hover:text-[#2E7D32] font-semibold text-base">
+                <a href="#ifter_item">Iftar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Banner -->
+      <section>
+        <div
+          class="banner flex flex-col justify-center items-center px-2 lg:px-0"
+        >
+          <div class="text-center container mx-auto space-y-4">
+            <h1
+              class="text-5xl md:text-6xl font-bold text-[#b0ec38] drop-shadow-lg font-delius"
+            >
+              Ahlan Sahlan Ya Ramadan
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-[#b0ec38] drop-shadow-md">
+              رمضان كريم🌙
+            </p>
+            <p class="mt-2 text-[#b0ec38] text-base md:text-lg">
+              Welcome to your Ramadan tracker & recipe hub
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Main -->
+    <main class="container mx-auto mt-28">
+      <!-- History -->
+      <section class="mt-28 px-4 md:px-0" id="history">
+        <!-- Section title -->
+        <h2
+          class="text-center text-3xl md:text-5xl font-bold mb-12 font-delius"
+        >
+          History of Ramadan
+        </h2>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-6 md:p-12 bg-[#b0ec3850] rounded-xl"
+        >
+          <div
+            class="space-y-4 text-gray-800 transition-all duration-500 hover:scale-105"
+          >
+            <p class="text-lg leading-relaxed">
+              Ramadan is the ninth month of the Islamic calendar, observed by
+              Muslims worldwide as a month of fasting, prayer, and reflection.
+              It commemorates the first revelation of the Quran to Prophet
+              Muhammad (PBUH) in 610 AD.
+            </p>
+            <p class="text-lg leading-relaxed">
+              In 624 AD (2 AH), fasting during this holy month was made
+              obligatory for all adult Muslims. Beyond refraining from food and
+              drink, it is a time for spiritual growth, increased charity, and
+              practicing self-discipline.
+            </p>
+            <p
+              class="text-lg leading-relaxed italic border-l-4 border-[#a2f300] pl-4 bg-white py-2 shadow-inner transition-colors duration-300 hover:bg-[#f0ffe0]"
+            >
+              "The month of Ramadan is that in which was revealed the Quran, a
+              guidance for the people."
+            </p>
 
-        </main>
-        <footer>
+            <a
+              href="/rewards.html"
+              class="inline-block mt-4 px-6 py-2 bg-[#72BF44] text-white font-semibold rounded-lg shadow-lg hover:bg-[#5fa636] hover:shadow-xl transition-all duration-300"
+            >
+              Rewards
+            </a>
+          </div>
 
-        </footer>
-    </body>
+          <!-- img -->
+          <div
+            class="flex justify-center md:justify-end transition-transform duration-500 hover:scale-105"
+          >
+            <img
+              src="assets/moon.png"
+              alt="Ramadan Moon"
+              class="w-full max-w-md h-auto object-contain drop-shadow-2xl rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Tracker -->
+      <section id="tracker" class="mt-28">
+        <!-- Section Title -->
+        <div class="text-center">
+          <h2 class="text-3xl md:text-5xl font-bold mb-2 font-delius">
+            Tracking My Prayer
+          </h2>
+          <p class="font-semibold text-sm italic text-gray-600">
+            "Indeed, prayer prohibits immorality and <br />
+            wrongdoing, and the remembrance of Allah is greater." (Quran 29:45)
+          </p>
+        </div>
+        <!-- pryer section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 items-center">
+          <div>
+            <img src="assets/prayer.png" alt="prayer" class />
+          </div>
+
+          <!-- Right Side -->
+          <div class="bg-[#b0ec3850] p-6 md:p-8 rounded-xl shadow-lg">
+            <!-- Today -->
+            <div class="mb-6">
+              <h2 class="text-xl md:text-2xl font-semibold text-gray-800">
+                Today, Wednesday, 20 March, 2026 – 30 Ramadan, 1447 AH
+              </h2>
+            </div>
+            <!-- Prayer Time List -->
+            <div class="grid grid-cols-2 gap-3">
+              <div class="space-y-2">
+                <!-- Fajr -->
+                <label
+                  class="flex justify-between items-center cursor-pointer transition-all duration-500 hover:scale-105"
+                >
+                  <input type="checkbox" class="hidden peer" />
+                  <span
+                    class="px-4 py-2 rounded-lg bg-gray-100 flex justify-between w-full transition-colors duration-300 peer-checked:bg-[#72BF44] peer-checked:text-white"
+                  >
+                    Fajr <span>04:45 AM</span>
+                  </span>
+                </label>
+
+                <!-- Dhuhr -->
+                <label
+                  class="flex justify-between items-center cursor-pointer transition-all duration-500 hover:scale-105"
+                >
+                  <input type="checkbox" class="hidden peer" />
+                  <span
+                    class="px-4 py-2 rounded-lg bg-gray-100 flex justify-between w-full transition-colors duration-300 peer-checked:bg-[#72BF44] peer-checked:text-white"
+                  >
+                    Dhuhr <span>12:15 PM</span>
+                  </span>
+                </label>
+                <!-- Asr -->
+                <label
+                  class="flex justify-between items-center cursor-pointer transition-all duration-500 hover:scale-105"
+                >
+                  <input type="checkbox" class="hidden peer" />
+                  <span
+                    class="px-4 py-2 rounded-lg bg-gray-100 flex justify-between w-full transition-colors duration-300 peer-checked:bg-[#72BF44] peer-checked:text-white"
+                  >
+                    Asr <span>03:45 PM</span>
+                  </span>
+                </label>
+                <!-- Maghrib (Iftar) -->
+                <label
+                  class="flex justify-between items-center cursor-pointer transition-all duration-500 hover:scale-105"
+                >
+                  <input type="checkbox" class="hidden peer" />
+                  <span
+                    class="px-4 py-2 rounded-lg bg-gray-100 flex justify-between w-full transition-colors duration-300 peer-checked:bg-[#72BF44] peer-checked:text-white"
+                  >
+                    Maghrib (Iftar) <span>06:30 PM</span>
+                  </span>
+                </label>
+                <!-- Isha + Taraweeh -->
+                <label
+                  class="flex justify-between items-center cursor-pointer transition-all duration-500 hover:scale-105"
+                >
+                  <input type="checkbox" class="hidden peer" />
+                  <span
+                    class="px-4 py-2 rounded-lg bg-gray-100 flex justify-between w-full transition-colors duration-300 peer-checked:bg-[#72BF44] peer-checked:text-white"
+                  >
+                    Isha + Taraweeh <span>08:00 PM</span>
+                  </span>
+                </label>
+              </div>
+              <div class="space-y-2">
+                <!-- Tahajjud -->
+                <label
+                  class="flex justify-between items-center cursor-pointer transition-all duration-500 hover:scale-105"
+                >
+                  <input type="checkbox" class="hidden peer" />
+                  <span
+                    class="px-4 py-2 rounded-lg bg-gray-100 flex justify-between w-full transition-colors duration-300 peer-checked:bg-[#72BF44] peer-checked:text-white"
+                  >
+                    Tahajjud <span>03:30 AM</span>
+                  </span>
+                </label>
+                <!-- Sahur -->
+                <label class="flex justify-between items-center cursor-pointer">
+                  <input type="checkbox" class="hidden peer" />
+                  <span
+                    class="px-4 py-2 rounded-lg bg-gray-100 flex justify-between w-full transition-colors duration-300 peer-checked:bg-[#72BF44] peer-checked:text-white"
+                  >
+                    Sahur <span>03:00 AM</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Iftar Items -->
+      <section id="ifter_item" class="my-28">
+        <!-- Section Title -->
+        <div>
+          <h2
+            class="text-center text-3xl md:text-5xl font-bold mb-12 font-delius"
+          >
+            Ifter Items
+          </h2>
+        </div>
+        <!-- Food Items -->
+        <div class="space-y-10">
+          <!-- Dessert -->
+          <div>
+            <h2
+              class="mb-10 text-3xl font-semibold underline italic font-delius"
+            >
+              Dessert Item
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+              <!-- Card 1 -->
+              <div
+                class="bg-gray-50 rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/dates.jpeg"
+                  alt="dates"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Dates</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Dessert</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: Rich in fiber, potassium, iron, and natural
+                    sugars for quick energy.
+                  </p>
+                </div>
+              </div>
+
+              <!-- card-2 -->
+              <div
+                class="shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/oats.jpeg"
+                  alt="oats"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Oatmeal</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Dessert</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: High in protein and fiber, supports digestion and
+                    muscle health.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/custard.jpeg"
+                  alt="custard"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Custard</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Deesert</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: Good source of healthy fats, vitamin E,
+                    magnesium, and protein.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proteins -->
+          <div>
+            <h2
+              class="mb-10 text-3xl font-semibold underline italic font-delius"
+            >
+              Proteins Item
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+              <!-- Card 1 -->
+              <div
+                class="bg-gray-50 rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/chickpeas.jpeg"
+                  alt="dates"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">chickpeas</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Proteins</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: Rich in fiber, potassium, iron, and natural
+                    sugars for quick energy.
+                  </p>
+                </div>
+              </div>
+
+              <!-- card-2 -->
+              <div
+                class="shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/peanut_butter.jpeg"
+                  alt="butter"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Peanuts Butter</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Proteins</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: High in protein and fiber, supports digestion and
+                    muscle health.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/walnts.jpeg"
+                  alt="walnuts"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Walnuts</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Proteins</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: Good source of healthy fats, vitamin E,
+                    magnesium, and protein.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Drinks -->
+          <div>
+            <h2
+              class="mb-10 text-3xl font-semibold underline italic font-delius"
+            >
+              Drinks Item
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+              <!-- Card 1 -->
+              <div
+                class="bg-gray-50 rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/yogart.jpeg"
+                  alt="yogurt"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Yogurt</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Drinks</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: Rich in fiber, potassium, iron, and natural
+                    sugars for quick energy.
+                  </p>
+                </div>
+              </div>
+
+              <!-- card-2 -->
+              <div
+                class="shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/carrot_juice.jpeg"
+                  alt="carrot_juice"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Carrot Juice</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Drinks</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: High in protein and fiber, supports digestion and
+                    muscle health.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="shadow-2xl hover:scale-105 transition-transform duration-300 card border-[#b0ec38] border hover:border-0"
+              >
+                <img
+                  src="assets/mix_juice.jpeg"
+                  alt="mix_juice"
+                  class="w-full h-64 object-cover p-1 rounded-xl"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold mb-1">Mix Fruit Juice</h3>
+                  <p class="text-sm text-gray-500 mb-2">Category: Drinks</p>
+                  <p class="text-gray-700 text-sm">
+                    Nutrition: Good source of healthy fats, vitamin E,
+                    magnesium, and protein.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
